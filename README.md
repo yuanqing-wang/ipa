@@ -1,2 +1,2 @@
-# ipa
-Invariance by Pre-training and Auto-differentiation
+# spritz
+SO(3)-invariance by Back-Propagation and Initialization
