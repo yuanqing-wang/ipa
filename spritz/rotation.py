@@ -23,9 +23,9 @@ class RandomRotation(torch.nn.Module):
         # (NUM_SAMPLES, 3, 3)
         R = self.random_rotation(num_samples)
 
-        # (N, 3, NUM_SAMPLES)
+        # (NUM_SAMPLES, N, 3)
         X = torch.einsum(
-            "na, sab -> nbs",
+            "na, sab -> snb",
             X,
             R,
         )
